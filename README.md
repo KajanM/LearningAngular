@@ -1,0 +1,1 @@
+Practice code for [Angular Fundamentals](https://app.pluralsight.com/library/courses/angular-fundamentals/table-of-contents) Pluralsight course by Jim Cooper and Joe Eames
