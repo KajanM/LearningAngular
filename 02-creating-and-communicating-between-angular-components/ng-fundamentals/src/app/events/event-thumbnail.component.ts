@@ -19,4 +19,10 @@ import { Component, Input } from '@angular/core';
 export class EventThumbnailComponent {
   @Input()
   event: any;
+
+  someProperty: any = "some property value";
+
+  logFoo() {
+    console.log('foo');
+  }
 }
