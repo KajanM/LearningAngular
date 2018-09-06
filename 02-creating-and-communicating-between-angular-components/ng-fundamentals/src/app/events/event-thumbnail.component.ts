@@ -16,7 +16,7 @@ import { Component, Input } from '@angular/core';
   </div>
   `
 })
-
 export class EventThumbnailComponent {
-  @Input() event: any;
+  @Input()
+  event: any;
 }

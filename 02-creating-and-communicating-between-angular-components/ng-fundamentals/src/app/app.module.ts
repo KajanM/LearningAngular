@@ -11,10 +11,8 @@ import { EventThumbnailComponent } from './events/event-thumbnail.component';
     EventsListComponent,
     EventThumbnailComponent
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
   bootstrap: [EventAppComponent]
 })
-export class AppModule { }
+export class AppModule {}
