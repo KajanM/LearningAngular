@@ -80,3 +80,13 @@ Each time the expression is evaluated, the result remains same.
 
 `(click)="doSomething()"`
 
+## Hiding elements
+
+* using `*ngIf` will comment out the code if expression is `false`
+* using `hidden` property binding will set the `hidden` property of the `HTML` element to `true` if the expression is `true`
+* if not rendering on the DOM will serve performance use `*ngIf`
+* if need to show and hide frequently (say for mouse click) then use property binding
+
+`<div *ngIf="event?.onlineUrl">Online URL: {{event.onlineUrl}}</div>`
+
+`<div [hidden]="!event?.location">`
