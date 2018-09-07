@@ -6,7 +6,7 @@ WebPack loads the `angular.json`
 
 ### angular.json
 
-`"main": "src/main.ts"
+`"main": "src/main.ts"`
 
 ### main.ts
 
