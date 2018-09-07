@@ -90,3 +90,43 @@ Each time the expression is evaluated, the result remains same.
 `<div *ngIf="event?.onlineUrl">Online URL: {{event.onlineUrl}}</div>`
 
 `<div [hidden]="!event?.location">`
+
+## CSS class binding
+
+`<div [class.green]="event?.time === '8:00 am'" ...>`
+
+### ngClass
+
+`<div [ngClass]=getStartTimeClass() ...`
+
+#### Method-1: return an Object
+
+```angular
+getStartTimeClass() {
+  const isEarlyStart = this.event && this.event.time === '8:00 am';
+  return {green: isEarlyStart, bold: isEarlyStart};
+}
+```
+
+#### Method-2: return a `String` of classes
+
+```angular
+getStartTimeClass() {
+  if (this.event && this.event.time === '8:00 am') {
+    return 'green bold'
+  }
+  return '';
+}
+```
+
+#### Method-3: return an `Array` of classes
+
+```angular
+getStartTimeClass() {
+  if (this.event && this.event.time === '8:00 am') {
+    return ['green', 'bold']
+  }
+  return [];
+}
+```
+
